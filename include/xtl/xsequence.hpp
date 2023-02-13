@@ -127,7 +127,7 @@ namespace xtl
             template <class T>
             static inline R forward(const T& r)
             {
-                R ret;
+                R ret{};
                 std::copy(std::begin(r), std::end(r), std::begin(ret));
                 return ret;
             }
